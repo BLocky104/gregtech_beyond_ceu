@@ -1,4 +1,4 @@
- priority 6
+#priority 6
 import crafttweaker.block.IBlockState;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -31,7 +31,7 @@ val hyper_chemical_plant = Builder.start(loc, 3007)
                        return FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
                 .aisle("CCCCC","F   F","F   F","F   F","CCCCC")
                 .aisle("CCCCC"," PPP "," PPP "," PPP ","CCCCC")
-                .aisle("SCCCE"," PPP "," PPP "," PPP ","CCCCC")
+                .aisle("SCCCC"," PPP "," PPP "," PPP ","CCCCC")
                 .aisle("CCCCC"," PPP "," PPP "," PPP ","CCCCC")
                 .aisle("CCCCC","F   F","F   F","F   F","CCCCC")
                 .where('S', controller.self())

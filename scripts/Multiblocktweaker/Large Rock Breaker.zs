@@ -1,4 +1,4 @@
- priority 6
+#priority 6
 import crafttweaker.block.IBlockState;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -25,7 +25,6 @@ import mods.gregtech.recipe.IRecipeLogic;
 import mods.gregtech.recipe.RecipeMap;
 
 var loc = "mbt:large_rock_breaker";
-
 val large_rock_breaker = Builder.start(loc, 3008)
     .withPattern(function(controller as IControllerTile) as IBlockPattern {
                        return FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)

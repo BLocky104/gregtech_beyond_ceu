@@ -1,4 +1,4 @@
- priority 6
+#priority 6
 import crafttweaker.block.IBlockState;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
