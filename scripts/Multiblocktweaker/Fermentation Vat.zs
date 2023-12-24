@@ -30,47 +30,47 @@ val fermentation_vat = Builder.start(loc, 3002)
     .withPattern(function(controller as IControllerTile) as IBlockPattern {
                        return FactoryBlockPattern.start(RelativeDirection.RIGHT, RelativeDirection.DOWN, RelativeDirection.FRONT)
                 .aisle(
-                    "~~~~~",
-                    "~F~F~",
-                    "~~~~~",
-                    "~F~F~",
-                    "~~~~~")
+                    "     ",
+                    " F F ",
+                    "     ",
+                    " F F ",
+                    "     ")
                 .aisle(
-                    "~~P~~",
-                    "~WWW~",
+                    "  P  ",
+                    " WWW ",
                     "PWWWP",
-                    "~WWW~",
-                    "~~S~~")
+                    " WWW ",
+                    "  S  ")
                 .aisle(
-                    "~~P~~",
-                    "~GGG~",
-                    "PG~GP",
-                    "~GGG~",
-                    "~~P~~")
+                    "  P  ",
+                    " GGG ",
+                    "PG GP",
+                    " GGG ",
+                    "  P  ")
                 .aisle(
-                    "~~P~~",
-                    "~GGG~",
-                    "PG~GP",
-                    "~GGG~",
-                    "~~P~~")
+                    "  P  ",
+                    " GGG ",
+                    "PG GP",
+                    " GGG ",
+                    "  P  ")
                 .aisle(
-                    "~~P~~",
-                    "~GGG~",
-                    "PG~GP",
-                    "~GGG~",
-                    "~~P~~")
+                    "  P  ",
+                    " GGG ",
+                    "PG GP",
+                    " GGG ",
+                    "  P  ")
                 .aisle(
-                    "~~P~~",
-                    "~WWW~",
+                    "  P  ",
+                    " WWW ",
                     "PWWWP",
-                    "~WWW~",
-                    "~~P~~")
+                    " WWW ",
+                    "  P  ")
                 .aisle(
-                    "~~~~~",
-                    "~~P~~",
-                    "~PPP~",
-                    "~~P~~",
-                    "~~~~~")
+                    "     ",
+                    "  P  ",
+                    " PPP ",
+                    "  P  ",
+                    "     ")
                 .where('S', controller.self())
             .where("G", CTPredicate.states(<metastate:gregtech:metal_casing:4>)
                                       | CTPredicate.abilities(<mte_ability:IMPORT_ITEMS>).setMinGlobalLimited(1).setPreviewCount(1)
@@ -79,6 +79,7 @@ val fermentation_vat = Builder.start(loc, 3002)
                                       | CTPredicate.abilities(<mte_ability:EXPORT_FLUIDS>).setMinGlobalLimited(1).setPreviewCount(1)
                                       | CTPredicate.abilities(<mte_ability:INPUT_ENERGY>).setMinGlobalLimited(1).setPreviewCount(1)
             )              
+            .where(" ", CTPredicate.getAir())
             .where("W", <blockstate:gregtech:machine_casing>)
             .where("P", <metastate:gregtech:boiler_casing:1>)
             .where("F", <metastate:gregtech:meta_block_frame_20:4>)
