@@ -96,6 +96,6 @@ val fermentation_vat = Builder.start(loc, 3002)
 						.minOutputs(1)
                         .maxOutputs(4)
                         .build())
-		.withBaseTexture(<gregtech:boiler_casing:1>.asBlock().definition.getStateFromMeta(1))
+		.withBaseTexture(<gregtech:boiler_casing>.asBlock().definition.getStateFromMeta(1))
 		.buildAndRegister();
 
