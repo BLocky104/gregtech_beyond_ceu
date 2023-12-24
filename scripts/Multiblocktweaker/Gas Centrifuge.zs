@@ -44,7 +44,7 @@ val gas_centrifuge = Builder.start(loc, 3003)
             )              
             .where("C", <metastate:gregtech:boiler_casing:1>)
             .where(" ", CTPredicate.getAir())
-            .where("Z", <metastate:gregtech:machine_casing:4>)
+            .where("Z", <metastate:gregtech:metal_casing:4>)
             .build();
     } as IPatternBuilderFunction)
 	    .withRecipeMap(
@@ -58,6 +58,6 @@ val gas_centrifuge = Builder.start(loc, 3003)
 						.minOutputs(1)
                         .maxOutputs(4)
                         .build())
-		.withBaseTexture(<gregtech:machine_casing:4>.asBlock().definition.getStateFromMeta(1))
+		.withBaseTexture(<gregtech:metal_casing:4>.asBlock().definition.getStateFromMeta(1))
 		.buildAndRegister();
 
