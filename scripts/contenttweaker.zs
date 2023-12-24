@@ -77,3 +77,11 @@ internal_structure.setToolClass("pickaxe");
 internal_structure.setToolLevel(5);
 internal_structure.setBlockSoundType(<soundtype:metal>);
 internal_structure.register();
+
+var gravity_separator_rotor_block = VanillaFactory.createBlock("gravity_separator_rotor_block", <blockmaterial:rock>);
+gravity_separator_rotor_block.setBlockHardness(10.0);
+gravity_separator_rotor_block.setBlockResistance(10.0);
+gravity_separator_rotor_block.setToolClass("pickaxe");
+gravity_separator_rotor_block.setToolLevel(5);
+gravity_separator_rotor_block.setBlockSoundType(<soundtype:metal>);
+gravity_separator_rotor_block.register();
