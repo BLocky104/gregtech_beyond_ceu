@@ -61,3 +61,19 @@ concrete_floor.setToolClass("pickaxe");
 concrete_floor.setToolLevel(5);
 concrete_floor.setBlockSoundType(<soundtype:metal>);
 concrete_floor.register();
+
+var motor_t1 = VanillaFactory.createBlock("motor_t1", <blockmaterial:rock>);
+motor_t1.setBlockHardness(10.0);
+motor_t1.setBlockResistance(10.0);
+motor_t1.setToolClass("pickaxe");
+motor_t1.setToolLevel(5);
+motor_t1.setBlockSoundType(<soundtype:metal>);
+motor_t1.register();
+
+var internal_structure = VanillaFactory.createBlock("internal_structure", <blockmaterial:rock>);
+internal_structure.setBlockHardness(10.0);
+internal_structure.setBlockResistance(10.0);
+internal_structure.setToolClass("pickaxe");
+internal_structure.setToolLevel(5);
+internal_structure.setBlockSoundType(<soundtype:metal>);
+internal_structure.register();
